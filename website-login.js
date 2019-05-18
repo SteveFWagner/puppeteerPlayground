@@ -2,7 +2,7 @@ require('dotenv').config()
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const browser = await puppeteer.launch({headless:false,slowMo:250});
+  const browser = await puppeteer.launch({headless:false,slowMo:70});
   const page = await browser.newPage();
 
   const loginButton = '#root > div > div:nth-child(1) > header > div > div:nth-child(5) > button'
