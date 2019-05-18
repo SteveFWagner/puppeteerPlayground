@@ -2,7 +2,7 @@ require('dotenv').config()
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const browser = await puppeteer.launch({headless:false});
+  const browser = await puppeteer.launch({headless:false,slowMo:250});
   const page = await browser.newPage();
 
   const loginButton = '#root > div > div:nth-child(1) > header > div > div:nth-child(5) > button'
@@ -13,6 +13,7 @@ const puppeteer = require('puppeteer');
   const accountBio = '#profilepaper > p:nth-child(4)'
   const {THISISTHEUSEREMAIL,THEPASS} = process.env    
 
+  await page.setViewport({ width: 1280, height: 800 })
   await page.goto('http://u-knight.ninja',{waitUntil: 'networkidle2'});
   await page.click(loginButton)
 
