@@ -1,0 +1,25 @@
+{
+  "name": "puppet-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "headlines-scrape.js",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "puppeteer": "^1.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteveFWagner/puppeteerPlayground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SteveFWagner/puppeteerPlayground/issues"
+  },
+  "homepage": "https://github.com/SteveFWagner/puppeteerPlayground#readme"
+}
