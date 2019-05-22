@@ -16,6 +16,6 @@ const puppeteer = require('puppeteer');
             }))
     )
     console.log(titles)
-
+        //do stuff with the titles
     await browser.close();
 })();
